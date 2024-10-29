@@ -1,0 +1,75 @@
+---
+title: "resume"
+author: "Hanchuan Chen"
+date: "2024-10-29"
+output: html_document
+---
+
+---
+
+# Hanchuan Chen
+
+📞 (917) 868-5246  
+📧 hc3563@cumc.columbia.edu  
+
+---
+
+## Education
+
+**Columbia University, Mailman School of Public Health, New York, NY**  
+*Master of Sciences, Biostatistics, Theory and Method track*  
+Expected Graduation: May 2026  
+
+**New York University, College of Arts and Science, New York, NY**  
+*Bachelor of Arts, Joint Major of Computer Science and Data Science*  
+Expected Graduation: May 2024  
+
+---
+
+## Work Experience
+
+**Data Mining Intern**, Geely Automobile, Zhejiang, China  
+*May 2023 – August 2023*  
+
+- Cleaned and corrected raw data for a smart battery charging model, achieving 96% accuracy after calibration.
+
+- Created intermediate data tables, turning them into recyclable corporate digital assets.
+
+- Optimized NEV battery swapping station power time-of-use electricity analysis nationwide, increasing accuracy by 20%.
+
+- Designed a monitoring algorithm for NEV battery swap stations to detect and flag abnormal station data automatically.
+
+---
+
+## Project Experience
+
+**Spotify Music Genre Classification Analysis**  
+*April 2024 – May 2024*  
+
+- Classified 50,000 songs across 10 genres, achieving a prediction accuracy 5 times higher than random guessing.
+
+- Imputed missing data and applied LDA (Latent Dirichlet Allocation) for dimensionality reduction to visualize the data.
+
+- Used Random Forest and XGBoost models for predictions, achieving an average AUC score of 0.9.
+
+**Glacier and Ship Image Classification Task**  
+*March 2024 – May 2024*  
+
+- Predicted and differentiated glaciers and ships across 4,000 satellite images.
+
+- Built a CNN (Convolutional Neural Network) model and regularized the data, achieving an accuracy of 86% on the test set.
+
+---
+
+## Technical Skills
+
+- **Coding Languages:** Python, R, SQL, SAS
+- **Other Tools:** Microsoft Word, Excel, PowerPoint, LaTeX,, Git
+
+---
+
+## Honors
+
+- **Dean’s List for Academic Year 2021 - 2022**
+
+

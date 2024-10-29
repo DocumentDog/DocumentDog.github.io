@@ -1,0 +1,43 @@
+---
+title: "Welcome to Hanchuan Chen's Portfolio"
+author: "Hanchuan Chen"
+date: "2024-10-29"
+output: html_document
+---
+
+---
+
+## About Me
+
+Hello! My name is **Hanchuan Chen**, and I am a first-year master's student in **Biostatistics**. I am deeply passionate about uncovering insights from data and using statistical methodologies to contribute to advancements in health and science.
+
+## Homework 4
+
+This page is dedicated to **Homework 4**, where I am showcasing my progress and understanding in the field of biostatistics. Here, you'll find my approach, analyses, and reflections on the work I’ve completed as part of my studies. 
+
+## My Passion for Biostatistics
+
+As I continue my journey, I am excited to develop and apply new skills, enhance my analytical thinking, and work on projects that bridge biostatistics and real-world applications. This website serves as a portfolio for my growth, learning, and dedication to biostatistics.
+
+Below is my Resume, thank you for visiting!
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
