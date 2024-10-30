@@ -1,9 +1,15 @@
 ---
-title: "Welcome to Hanchuan Chen's Portfolio"
+title: "Welcome to Hanchuan Chen's Website"
 author: "Hanchuan Chen"
 date: "2024-10-29"
 output: html_document
 ---
+```{r message=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
 
 ---
 
@@ -19,14 +25,50 @@ This page is dedicated to **Homework 4**, where I am showcasing my progress and 
 
 As I continue my journey, I am excited to develop and apply new skills, enhance my analytical thinking, and work on projects that bridge biostatistics and real-world applications. This website serves as a portfolio for my growth, learning, and dedication to biostatistics.
 
-Below is my Resume, thank you for visiting!
+In the navigation bar there is my Resume, also below are three plots shown by using Instacart dataset. Thank you for visiting!
 
 ---
 
+```{r scatterplot}
+data("ny_noaa")
+
+ny_noaa = 
+  ny_noaa |> 
+  mutate(year = year(date)) |> 
+  mutate(month = month(date)) |> 
+  mutate(day = day(date))
 
 
+ny_noaa |> 
+  filter(id == "USW00014743") |> 
+  filter(year > 2009) |> 
+  plot_ly(
+    x = ~snwd, y = ~tmin, type = "scatter", mode = "markers"
+  )
+```
+From this scatterplot, we can see that the snow depth does not have relationship with minimum temperature. Also, scatterplot might not be a good plot to show the relationship between these two variables.
 
+```{r boxplot}
+ny_noaa |> 
+  filter(id == "USW00014743") |> 
+  plot_ly(
+    x = ~month, y = ~snwd, type = "box"
+  )
+```
 
+From this boxplot, it is clear that in the area for this station, snow usually falls between December to March, and the deepest snow depth is in February.  
+
+```{r barplot}
+ny_noaa |> 
+  filter(id == "USW00014743") |> 
+  group_by(year) |> 
+  summarize(avg_prcp = mean(prcp, na.rm = TRUE)) |> 
+  plot_ly(
+    x = ~year, y = ~avg_prcp, type = "bar"
+  )
+```
+
+By this barplot, we can see the average precipitation in for each year in this specific area. Precipitation in this region has a three-to-four year cycle: the precipitation is normal at first but gradually increase at last. 
 
 
 
