@@ -4,12 +4,6 @@ author: "Hanchuan Chen"
 date: "2024-10-29"
 output: html_document
 ---
-```{r message=FALSE}
-library(tidyverse)
-library(p8105.datasets)
-library(plotly)
-```
-
 
 ---
 
@@ -25,51 +19,74 @@ This page is dedicated to **Homework 4**, where I am showcasing my progress and 
 
 As I continue my journey, I am excited to develop and apply new skills, enhance my analytical thinking, and work on projects that bridge biostatistics and real-world applications. This website serves as a portfolio for my growth, learning, and dedication to biostatistics.
 
-In the navigation bar there is my Resume, also below are three plots shown by using Instacart dataset. Thank you for visiting!
+Below is my Resume, and in the navbar there is my plots dashboard. Thank you for visiting!
 
 ---
 
-```{r scatterplot}
-data("ny_noaa")
+# Hanchuan Chen
 
-ny_noaa = 
-  ny_noaa |> 
-  mutate(year = year(date)) |> 
-  mutate(month = month(date)) |> 
-  mutate(day = day(date))
+📞 (917) 868-5246  
+📧 hc3563@cumc.columbia.edu  
 
+---
 
-ny_noaa |> 
-  filter(id == "USW00014743") |> 
-  filter(year > 2009) |> 
-  plot_ly(
-    x = ~snwd, y = ~tmin, type = "scatter", mode = "markers"
-  )
-```
-From this scatterplot, we can see that the snow depth does not have relationship with minimum temperature. Also, scatterplot might not be a good plot to show the relationship between these two variables.
+## Education
 
-```{r boxplot}
-ny_noaa |> 
-  filter(id == "USW00014743") |> 
-  plot_ly(
-    x = ~month, y = ~snwd, type = "box"
-  )
-```
+**Columbia University, Mailman School of Public Health, New York, NY**  
+*Master of Sciences, Biostatistics, Theory and Method track*  
+Expected Graduation: May 2026  
 
-From this boxplot, it is clear that in the area for this station, snow usually falls between December to March, and the deepest snow depth is in February.  
+**New York University, College of Arts and Science, New York, NY**  
+*Bachelor of Arts, Joint Major of Computer Science and Data Science*  
+Expected Graduation: May 2024  
 
-```{r barplot}
-ny_noaa |> 
-  filter(id == "USW00014743") |> 
-  group_by(year) |> 
-  summarize(avg_prcp = mean(prcp, na.rm = TRUE)) |> 
-  plot_ly(
-    x = ~year, y = ~avg_prcp, type = "bar"
-  )
-```
+---
 
-By this barplot, we can see the average precipitation in for each year in this specific area. Precipitation in this region has a three-to-four year cycle: the precipitation is normal at first but gradually increase at last. 
+## Work Experience
 
+**Data Mining Intern**, Geely Automobile, Zhejiang, China  
+*May 2023 – August 2023*  
+
+- Cleaned and corrected raw data for a smart battery charging model, achieving 96% accuracy after calibration.
+
+- Created intermediate data tables, turning them into recyclable corporate digital assets.
+
+- Optimized NEV battery swapping station power time-of-use electricity analysis nationwide, increasing accuracy by 20%.
+
+- Designed a monitoring algorithm for NEV battery swap stations to detect and flag abnormal station data automatically.
+
+---
+
+## Project Experience
+
+**Spotify Music Genre Classification Analysis**  
+*April 2024 – May 2024*  
+
+- Classified 50,000 songs across 10 genres, achieving a prediction accuracy 5 times higher than random guessing.
+
+- Imputed missing data and applied LDA (Latent Dirichlet Allocation) for dimensionality reduction to visualize the data.
+
+- Used Random Forest and XGBoost models for predictions, achieving an average AUC score of 0.9.
+
+**Glacier and Ship Image Classification Task**  
+*March 2024 – May 2024*  
+
+- Predicted and differentiated glaciers and ships across 4,000 satellite images.
+
+- Built a CNN (Convolutional Neural Network) model and regularized the data, achieving an accuracy of 86% on the test set.
+
+---
+
+## Technical Skills
+
+- **Coding Languages:** Python, R, SQL, SAS
+- **Other Tools:** Microsoft Word, Excel, PowerPoint, LaTeX,, Git
+
+---
+
+## Honors
+
+- **Dean’s List for Academic Year 2021 - 2022**
 
 
 

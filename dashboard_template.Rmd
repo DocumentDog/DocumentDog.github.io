@@ -1,0 +1,63 @@
+---
+title: "plot dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r scatterplot}
+data("ny_noaa")
+
+ny_noaa = 
+  ny_noaa |> 
+  mutate(year = year(date)) |> 
+  mutate(month = month(date)) |> 
+  mutate(day = day(date))
+
+
+ny_noaa |> 
+  filter(id == "USW00014743") |> 
+  filter(year > 2009) |> 
+  plot_ly(
+    x = ~snwd, y = ~tmin, type = "scatter", mode = "markers"
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r boxplot}
+ny_noaa |> 
+  filter(id == "USW00014743") |> 
+  plot_ly(
+    x = ~month, y = ~snwd, type = "box"
+  )
+```
+
+### Chart C
+
+```{r}
+ny_noaa |> 
+  filter(id == "USW00014743") |> 
+  group_by(year) |> 
+  summarize(avg_prcp = mean(prcp, na.rm = TRUE)) |> 
+  plot_ly(
+    x = ~year, y = ~avg_prcp, type = "bar"
+  )
+```
+

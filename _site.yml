@@ -1,10 +1,10 @@
-name: "Yay internet!"
+name: "hc3563"
 output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "Resume"
-      href: resume.html
+    - text: "dashboard"
+      href: dashboard_template.html
     - icon: fa-envelope fa-lg
       href: mailto:<hc3563@cumc.columbia.com>
     - icon: fa-github fa-lg
