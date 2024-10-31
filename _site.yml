@@ -3,6 +3,8 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
+    - text: "resume"
+      href: resume.html
     - text: "dashboard"
       href: dashboard_template.html
     - icon: fa-envelope fa-lg
@@ -11,4 +13,4 @@ navbar:
       href: http://github.com/DocumentDog/
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
