@@ -1,8 +1,9 @@
 ---
 title: "resume"
-author: "Hanchuan Chen"
-date: "2024-10-29"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ---
